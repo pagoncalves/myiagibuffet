@@ -23,3 +23,6 @@ function inicio() {
     }, time)
 }
 window.addEventListener("load", inicio)
+
+
+

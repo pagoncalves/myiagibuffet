@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Miyagi Buffet</title>
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="cardapio.css">
   <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
 
 </head>
@@ -16,15 +17,57 @@
     <div id="superior">
       <h2 class="titulos">Cardápio do </h2>
       <h1 class="titulos">Miyagi Buffet</h1>
-      <img src="Logo.png" alt="Logo Myiagi" >
+      <img src="Logo.png" alt="Logo Myiagi">
     </div>
     <div>
-        <button id="botoes"> <a href="index.html"> Início </a></button>
+      <button id="botoes"> <a href="index.html"> Início </a></button>
       <button id="botoes"> <a href="#sobre"> Sobre nós </a></button>
       <button id="botoes"> <a href="#orcamento"> Fale conosco</a> </button>
-    
+      <!--Ideia inicial criar seções, onde o cliente ira escolher o que entrada, pratos quentes, bebidas e sobremesa
+    As seções expandem conforme desejo 
+    -->
+    <p>
+    </p>
+    <button  onclick="expandir('entrada')">+</button> Entrada 
+      <div id="entrada" class="mais">
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+      </div>
+      <button onclick="expandir('pQuente')">+ </button> Pratos quentes
+      <div id="pQuente">
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+      </div>
+
+       <button onclick="expandir('sushi')">+ </button> Sushis
+      <div id="sushi">
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+      </div>
+
+        <button onclick="expandir('bebidas')">+ </button> Bebidas
+      <div id="bebidas">
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+      </div>
+
+      <button onclick="expandir('sobremesa')">+ </button> Sobremesa
+      <div id="sobremesa">
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+      </div>
+      
 
     </div>
   </div>
+  <script src="cardapio.js">
+
+</script>
 </body>
+
 </html>
